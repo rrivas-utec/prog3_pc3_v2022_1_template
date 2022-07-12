@@ -45,7 +45,7 @@ Elaborar la función de template `fixed_stack(string text, size_t sz)` que cumpl
 Escribir la función:
 
 ```cpp
-    std::unordered_set<address_t> near_addresses(const vector<address_t>& address);
+    std::unordered_set<address_t> hash_addresses(const vector<address_t>& address);
 ```
 Esta función debe retornar un `std::unordered_set` cuya key se genere utilizando el atributo `reference` de modo que si se utiliza el método `find` de la clase `std::unordered_set` se pueda buscar con éxito una dirección utilizando un objeto `address_t` donde solo el atributo `reference` tenga valor y el resto no tenga valores válidos.
 
