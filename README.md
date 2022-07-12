@@ -20,7 +20,7 @@ Elaborar la función de template `fixed_stack(string text, size_t sz)` que cumpl
 2. Una letra significa un `push` de la letra en un stack y un asterisco (*) significa un `pop`.
 3. Solo se permitirá almacenar en el stack una cantidad límite de valores correspondientes al valor del parámetro `sz`, ejemplo si `sz` es `7` solo se podrá almacenar 7 valores no más.
 4. Mientras no este lleno se podrá realizar `push` como se menciona en 1.
-5. En caso este lleno se verificará si la letra del `top` es mayúscula o minúscula
+5. En caso este lleno se verificará si la letra del `top` es mayúscula o minúscula.
 6. En caso sea mayúscula se convertirá la letra del `top` en minúscula y se descarta la letra que se intentó ingresar.
 7. En caso sea minúscula el `top` se reemplazara por la nueva letra que se intenta ingresar.
 8. Cada vez que se realice un `pop` la letra deberá ser almacenada en un contenedor que por default será un `vector`, pero puede ser personalizado a `deque` o `list`, la función debe retornar el contenedor con sus valores. 
