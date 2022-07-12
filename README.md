@@ -47,7 +47,7 @@ Escribir la función:
 ```cpp
     std::unordered_set<address_t> near_addresses(const vector<address_t>& address);
 ```
-Esta función debe retornar un `std::unordered_set` que cuyo key se genere utilizando el atributo `reference` de modo que si se utiliza el método `find` de la clase `std::unordered_set` se pueda buscar con éxito una dirección utilizando un objeto `address_t` donde solo el atributo `reference` tenga valor y el resto no tenga valores.
+Esta función debe retornar un `std::unordered_set` cuya key se genere utilizando el atributo `reference` de modo que si se utiliza el método `find` de la clase `std::unordered_set` se pueda buscar con éxito una dirección utilizando un objeto `address_t` donde solo el atributo `reference` tenga valor y el resto no tenga valores válidos.
 
 La clase que almacenará las direcciones debe ser una estructura como se muestra a continuación:
 ```cpp
@@ -59,8 +59,7 @@ struct address_t {
     friend ostream& operator <<(ostream& os, const address_t& address);
 };
 ```
-**NOTA:** Se requiere sobrecargar el operador `==` y especializar el método `std::hash` para que acepte generar keys
-          utilizando `address_t, ver: (https://en.cppreference.com/w/cpp/utility/hash)  
+**NOTA:** Se requiere sobrecargar el operador `==` y especializar el método `std::hash` para que acepte generar keys utilizando `address_t`, ver: (https://en.cppreference.com/w/cpp/utility/hash)  
 
 **Use Case #1:**
 ```cpp
@@ -134,10 +133,10 @@ Basado en la imagen, ubicar los árboles expandidos generados de los algoritmos 
 
 **NOTA:**  
 1. Para los casos de BFS, DFS y Prim empezar de cualquier nodo.  
-2. las respuestas de los algoritmos BFS, DFS y Prim deben incluir:
+2. las respuestas de los algoritmos `BFS`, `DFS` y `Prim` deben incluir:
    * El vértice de inicio.  
    * Remarcar, con un resaltador o una línea adicional en la imagen, las aristas recorridas y enumerarlas en orden de visita.  
    * Como resultado, incluir la lista de todas las aristas recorridas.  
-3. En caso de Kruskal adicionalmente incluir el priority queue inicial.
+3. En caso de `Kruskal` adicionalmente incluir el priority queue inicial.
 
 ![img.png](img.png)
