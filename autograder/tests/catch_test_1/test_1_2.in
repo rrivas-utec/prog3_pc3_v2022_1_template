@@ -1,0 +1,15 @@
+#input
+    UNIVERSIDAD***DE***INGENIERIA**Y**TECNOLOGIA
+#output
+    v r i a I N E D U e i r A G Y N c o o
+#endtest
+#input
+    COMPUTER**SCIENCE***IS****FUN**BUT***HARD***TO**MASTER
+#output
+    p t R M c e c S O S I C N U T U B r A H O T s
+#endtest
+#input
+    PROGRAMMING*THREE***
+#output
+    g a m n t r E O R
+#endtest
