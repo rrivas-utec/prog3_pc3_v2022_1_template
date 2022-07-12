@@ -22,7 +22,7 @@ Elaborar la función de template `fixed_stack(string text, size_t sz)` que cumpl
 4. Mientras no este lleno se podrá realizar `push` como se menciona en 1.
 5. En caso este lleno se verificará si la letra del `top` es mayúscula o minúscula.
 6. En caso sea mayúscula se convertirá la letra del `top` en minúscula y se descarta la letra que se intentó ingresar.
-7. En caso sea minúscula el `top` se reemplazara por la nueva letra que se intenta ingresar.
+7. En caso sea minúscula el `top` se reemplazara por la nueva letra que se intenta ingresar, `pop`  y `push`.
 8. Cada vez que se realice un `pop` la letra deberá ser almacenada en un contenedor que por default será un `vector`, pero puede ser personalizado a `deque` o `list`, la función debe retornar el contenedor con sus valores. 
 
 **Use Case #1:**
